@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <Button
+        android:id="@+id/button_D4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="33dp"
+        android:height="@dimen/buttonHeight"
+        android:onClick="clickD4"
+        android:text="@string/btext_D4"
+        android:width="@dimen/buttonWidth" />
+
+    <Button
+        android:id="@+id/button_D6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_D4"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/button_D4"
+        android:height="@dimen/buttonHeight"
+        android:onClick="clickD6"
+        android:text="@string/btext_D6"
+        android:width="@dimen/buttonWidth" />
+
+    <Button
+        android:id="@+id/button_D8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button_D4"
+        android:layout_below="@+id/button_D4"
+        android:layout_centerHorizontal="true"
+        android:height="@dimen/buttonHeight"
+        android:onClick="clickD8"
+        android:text="@string/btext_D8"
+        android:width="@dimen/buttonWidth" />
+
+    <Button
+        android:id="@+id/button_D10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_D6"
+        android:layout_below="@+id/button_D6"
+        android:layout_centerHorizontal="true"
+        android:height="@dimen/buttonHeight"
+        android:onClick="clickD10"
+        android:text="@string/btext_D10"
+        android:width="@dimen/buttonWidth" />
+
+    <Button
+        android:id="@+id/button_D12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_D8"
+        android:layout_below="@+id/button_D8"
+        android:layout_centerHorizontal="true"
+        android:height="@dimen/buttonHeight"
+        android:onClick="clickD12"
+        android:text="@string/btext_D12"
+        android:width="@dimen/buttonWidth" />
+
+    <Button
+        android:id="@+id/button_D20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_D10"
+        android:layout_below="@+id/button_D10"
+        android:layout_centerHorizontal="true"
+        android:height="@dimen/buttonHeight"
+        android:onClick="clickD20"
+        android:text="@string/btext_D20"
+        android:width="@dimen/buttonWidth" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_D12"
+        android:layout_alignRight="@+id/button_D20"
+        android:layout_below="@+id/button_D12"
+        android:ems="11"
+        android:textIsSelectable="false" />
+
+    <Button
+        android:id="@+id/button_Roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:height="@dimen/buttonHeight"
+        android:text="@string/btext_Roll"
+        android:width="@dimen/buttonWidth"
+        android:onClick="clickRoll" />
+
+    <Button
+        android:id="@+id/button_Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_Roll"
+        android:layout_alignBottom="@+id/button_Roll"
+        android:layout_toRightOf="@+id/button_D12"
+        android:height="@dimen/buttonHeight"
+        android:onClick="clickClear"
+        android:text="@string/btext_Clear"
+        android:width="@dimen/buttonWidth" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_Roll"
+        android:layout_below="@+id/button_Roll"
+        android:layout_marginTop="15dp"
+        android:text="@string/ftext_reroll"
+        android:checked="true" 
+        android:onClick="clickCheck"/>
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_alignRight="@+id/button_Clear"
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="24dp"
+        android:ems="11"
+        android:gravity="center"
+        android:text="@string/default_total"
+        android:textIsSelectable="false"
+        android:textSize="30sp" />
+
+</RelativeLayout>
